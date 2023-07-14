@@ -7,26 +7,37 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/hello_world"
+        android:id="@+id/enter_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world"
-        android:textColor="@color/blue"
+        android:layout_marginTop="128dp"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Enter your name:"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/course_name"
+    <EditText
+        android:id="@+id/name_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Text View"
-        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hello_world" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_name" />
+
+    <Button
+        android:id="@+id/press_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Press me"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_input" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
